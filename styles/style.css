@@ -1,68 +1,54 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.frame {
-  width: 500px;
-  height: 500px;
+.blueBlock {
+  height: 50px;
+  background-color: rgb(19, 162, 162);
   position: relative;
-  overflow: hidden;
 }
 
-.triggers {
-  position: absolute;
-  z-index: 2;
-  height: 100%;
-  width: 100%;
+/* Стили для боковой панели */
+.openSidebar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.triggers button {
-  width: 50px;
-  font-size: 40px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border: none;
-  color: white;
-}
-
-.cards {
-  display: grid;
-  grid-auto-flow: column;
+  gap: 20px;
+  flex-direction: column;
+  background-color: rgb(205, 103, 103);
+  width: 25vw;
+  height: 100vh;
   position: absolute;
-  transition: left 0.5s ease;
+  top: 0;
   left: 0;
+  box-shadow: 5px 0 15px rgb(0, 0, 0);
 }
 
-.card {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-}
-
-.rounds {
-  position: absolute;
-  z-index: 2;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 15px;
-}
-
-.rounds button {
-  width: 25px;
-  height: 25px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
+.icon-btn {
+  font-size: 24px;
+  color: #000;
+  border: none;
+  background: none;
   cursor: pointer;
 }
 
-.rounds .active {
+.elements {
   background-color: orange;
+  border-radius: 10px;
+  border: none;
+  width: 90%;
+  height: 5vh;
+  margin: 0 5%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 450;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.elements:hover {
+  background-color: darkorange;
 }/*# sourceMappingURL=style.css.map */

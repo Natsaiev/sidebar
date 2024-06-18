@@ -1,2 +1,51 @@
 @import "reset";
 
+.blueBlock {
+  height: 50px;
+  background-color: rgb(19, 162, 162);
+  position: relative;
+}
+
+/* Стили для боковой панели */
+.openSidebar {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  background-color: rgb(205, 103, 103);
+  width: 25vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 5px 0 15px rgba(0, 0, 0,);
+}
+
+.icon-btn {
+  font-size: 24px;
+  color: #000;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+
+.elements {
+  background-color: orange;
+  border-radius: 10px;
+  border: none;
+  width: 90%;
+  height: 5vh;
+  margin: 0 5%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 450;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+.elements:hover {
+  background-color: darkorange;
+}
