@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.frame {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.triggers {
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.triggers button {
+  width: 50px;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-auto-flow: column;
+  position: absolute;
+  transition: left 0.5s ease;
+  left: 0;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+}
+
+.rounds {
+  position: absolute;
+  z-index: 2;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.rounds button {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.rounds .active {
+  background-color: orange;
+}/*# sourceMappingURL=style.css.map */
